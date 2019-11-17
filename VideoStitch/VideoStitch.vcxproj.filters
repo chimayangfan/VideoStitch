@@ -14,4 +14,55 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="apap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="blender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exposure_compensator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="video_stitch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="video_stitcher.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="composer.cu">
+      <Filter>源文件</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="blender.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="composer_gpu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="exposure_compensator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="gutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="video_stitcher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

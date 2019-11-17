@@ -52,6 +52,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.props" />
   </ImportGroup>
   <ImportGroup Label="Shared">
   </ImportGroup>
@@ -63,6 +64,8 @@
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="D:\Opencv2413_Debug_x64.props" />
+    <Import Project="D:\CUDA_X64.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -110,8 +113,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="apap.cpp" />
+    <ClCompile Include="blender.cpp" />
+    <ClCompile Include="exposure_compensator.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="video_stitch.cpp" />
+    <ClCompile Include="video_stitcher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="composer.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apap.h" />
+    <ClInclude Include="blender.h" />
+    <ClInclude Include="composer_gpu.h" />
+    <ClInclude Include="exposure_compensator.h" />
+    <ClInclude Include="gutil.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="video_stitcher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 9.0.targets" />
   </ImportGroup>
 </Project>
